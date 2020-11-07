@@ -1,18 +1,19 @@
-import Head from "next/head";
-import Header from "../components/Header";
-
+import Layout from "../components/Layout";
+import Title from "../components/Title";
+import SignIn from "../components/SignIn";
 
 const Home = () => {
   return (
-    <>
-      <Head>
-        <title>Linkr</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet" />
-      </Head>
-      <Header />
-    </>
+    <Layout>
+      <div className="has-background-black-ter">
+        <div className="container">
+          <div className="columns is-vcentered full-height">
+            <Title />
+            <SignIn />
+          </div>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

@@ -1,2 +1,16 @@
 $family-secondary: 'Passion One', sans-serif;
+$family-code: 'Oswald', sans-serif;
+$size-7: 7rem;
+
+.full-height {
+   height: 100vh;
+}
+.full {
+   height: 100%;
+}
+.column.is-vcentered {
+   display: flex;
+   align-items: center;
+}
+
 @import 'bulma/bulma';
